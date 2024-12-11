@@ -1,8 +1,98 @@
-/* Đặt nền trang web màu hồng */
+/* Đặt nền trang web màu hồng và căn chỉnh toàn bộ trang */
 body {
     background-color: #f8b0c3; /* Màu hồng pastel */
-    font-family: Arial, sans-serif; /* Tùy chọn font chữ */
-    color: #fff; /* Màu chữ trắng cho dễ đọc */
+    font-family: Arial, sans-serif; /* Font chữ dễ đọc */
+    color: #fff; /* Màu chữ trắng cho dễ nhìn */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Căn giữa nội dung */
+    overflow-x: hidden;
 }
 
-/* Tùy chỉnh các phần khác của trang nếu cần */
+/* Căn chỉnh tiêu đề */
+h1, h2 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+/* Căn chỉnh nội dung tin nhắn chúc mừng */
+.message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Nền mờ */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hiệu ứng nút "Close" */
+.close-btn {
+    background-color: #ff4081; /* Màu hồng đậm cho nút */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #ff1f61; /* Màu hồng đậm hơn khi hover */
+}
+
+/* Hiệu ứng di chuyển trái tim */
+.heart {
+    font-size: 2rem;
+    color: #ff4081;
+    animation: heart-beat 1s infinite alternate;
+}
+
+/* Hiệu ứng nhảy của chữ "Happy Birthday" */
+@keyframes heart-beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Chỉnh cho các phần tử như hình ảnh, video, nhạc */
+img, audio, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Hiệu ứng cho khung chữ */
+.letter-frame {
+    display: inline-block;
+    border: 2px solid #ff4081;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Các hiệu ứng khác cho trang nếu cần */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .message {
+        font-size: 1.2rem;
+    }
+    h1, h2 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,8 @@
+/* Đặt nền trang web màu hồng */
+body {
+    background-color: #f8b0c3; /* Màu hồng pastel */
+    font-family: Arial, sans-serif; /* Tùy chọn font chữ */
+    color: #fff; /* Màu chữ trắng cho dễ đọc */
+}
+
+/* Tùy chỉnh các phần khác của trang nếu cần */
